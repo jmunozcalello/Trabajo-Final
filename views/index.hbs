@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/stylesheets/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+ <h1 id="title">
+    Formulario
+ </h1>
+ <p id="description">
+    Gracias por tomarte el tiempo de completar este Formulario
+ </p>
+ <div>
+  <form id="survey-form" action="/" method="post">
+   <fieldset>
+    <label id="name-label" for="name">
+    Nombre y Apellido
+     <input id="name" name="nombre" type="text" placeholder="Nombre y Apellido" required>
+    </label>
+    <label id="email-label" for="email">
+    Email
+     <input id="email" name="email" type="email" placeholder="Email" required>
+    </label>
+    <label id="number-label" for="age"> 
+    Edad (opcional)
+     <input id="age" name="edad" min="16" max="120" type="number" placeholder="Edad">
+    </label>
+    <label id="dropdown-label" for="dropdown">
+    Situacion
+    <select id="dropdown">
+        <option value="">Elige una opción</option>
+        <option value="1">Estudiante tiempo completo</option>
+        <option value="2">Trabajo tiempo completo</option>
+        <option value="3">Estudiante y Trabajador</option>
+        <option value="4">Otro</option>
+    </select>
+    </label>
+   </fieldset>  
+   <fieldset>
+   <label>Recomendarias esta institucion a personas interesadas en la Programación</label>
+   <label class="radio-label" for="Yes"><input type="radio" class="inline"  id="Yes">Si</label>
+   <label class="radio-label" for="No"><input type="radio" class="inline" id="No">No</label>
+   <label class="radio-label" for="Avanzado"><input type="radio" class="inline" id="Avanzado">Solo a quienes ya tienen conocimiento previo</label>
+   <label class="radio-label" for="Principiante"><input type="radio" class="inline" id="Principiante">Solo a quienes quieren interiorizarse en el tema sin conocimiento previo</label>
+   <label>
+    Qué es lo que mas te agrada de la institucion?
+    <select id="feature">
+        <option value="">Elige una opcion</option>
+        <option value="1">Desafios</option>
+        <option value="2">La comunidad educativa</option>
+        <option value="3">Tutorias</option>
+        <option value="4">Proyectos</option>
+        <option value="5">Espacio educativo</option>
+        <option value="6">Nada en especial</option>
+    </select>
+   </label>
+   <label id="improvement">
+    Qué te gustaria que mejore de la universidad? 
+    <div>
+    <input value="1" id="mejora" class="inline" type="checkbox">Aulas
+    </div>  
+    <div>
+    <input value="2" id="mejora" class="inline" type="checkbox">Espacios abiertos
+    </div>
+    <div>
+    <input value="3" id="mejora" class="inline" type="checkbox">Pagina Web
+    </div>
+    <div>
+    <input value="4" id="mejora" class="inline" type="checkbox">Horarios
+    </div>
+    <div>
+    <input value="5" id="mejora" class="inline" type="checkbox">Profesores
+    </div>
+    <div>
+    <input value="6" id="mejora" class="inline" type="checkbox">Metodos de enseñanza
+    </div> 
+    <div >
+    <input value="7" id="mejora" class="inline" type="checkbox">Clases de apoyo
+    </div>
+    <div>
+    <input value="8" id="mejora" class="inline" type="checkbox">Cursos a distancia
+    </div>
+    <div>
+    <input value="9" id="mejora" class="inline" type="checkbox">Variedad de carreras
+    </div>  
+    <div>
+    <input value="10" id="mejora" class="inline" type="checkbox">Cursos de idioma
+    </div>
+    <div>
+    <input value="11" id="mejora" class="inline" type="checkbox">Intercambios con el exterior
+    </div>
+   </label>
+   <label>Algún comentario o sugerencia?
+     <textarea name="sugerencia" type="textarea" id="suggestions"></textarea>
+   </label>
+   </fieldset>
+   <button type="submit" onclick="location.href='gracias'" id="submit">Enviar</button>
+ </form>
+ </div>
+ <footer>Diseñado por Juan Muñoz</footer>
+</body>
+</html>

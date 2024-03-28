@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheets/tabla.css">  
+    <title>Document</title>
+</head>
+<body>
+    <h1>Gracias por completar este formulario!</h1>
+    <h2>Novedades de la Universidad</h2>
+      </head>
+      <body>
+        <div class="tabla-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Título</th>
+                  <th>Desarrollo</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{#if novedades}}
+    <p>Se encontraron novedades</p>
+{{else}}
+    <p>No se encontraron novedades</p>
+{{/if}}
+
+                {{#each novedades}}
+                <tr>
+                  <td>{{Titulo}}</td>
+                  <td>{{Desarrollo}}</td>
+                </tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>
+          <button onclick="location.href='/admin/login'" id="log">Sos moderador?</button>
+</body>
+</html>
